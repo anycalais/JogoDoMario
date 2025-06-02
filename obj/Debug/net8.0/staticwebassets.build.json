@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Z3HgcViqge2hTE5Ls/SvHbT81TfI/TpEYAwemAaguhY=",
+  "Source": "JogoDoMario",
+  "BasePath": "_content/JogoDoMario",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "JogoDoMario\\wwwroot",
+      "Source": "JogoDoMario",
+      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\",
+      "BasePath": "_content/JogoDoMario",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\css\\style.css",
+      "SourceId": "JogoDoMario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\",
+      "BasePath": "_content/JogoDoMario",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\index.html",
+      "SourceId": "JogoDoMario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\",
+      "BasePath": "_content/JogoDoMario",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

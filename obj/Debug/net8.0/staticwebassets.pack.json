@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JogoDoMario.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.JogoDoMario.props",
+      "PackagePath": "build\\JogoDoMario.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.JogoDoMario.props",
+      "PackagePath": "buildMultiTargeting\\JogoDoMario.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.JogoDoMario.props",
+      "PackagePath": "buildTransitive\\JogoDoMario.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
