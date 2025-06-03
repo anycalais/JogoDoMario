@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\img\\clouds.png",
+      "PackagePath": "staticwebassets\\img\\clouds.png"
+    },
+    {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\img\\game-over.png",
+      "PackagePath": "staticwebassets\\img\\game-over.png"
+    },
+    {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\img\\mario.gif",
+      "PackagePath": "staticwebassets\\img\\mario.gif"
+    },
+    {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\img\\pipe.png",
+      "PackagePath": "staticwebassets\\img\\pipe.png"
+    },
+    {
       "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\kauany\\JogoDoMario\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JogoDoMario.Microsoft.AspNetCore.StaticWebAssets.props",
