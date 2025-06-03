@@ -1,96 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
 }
 
 .game-board {
-    width: 100%;
-    height: 500px;
-    border-bottom: 15px solid green;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-    background: linear-gradient(rgb(81, 150, 206), white);
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid green;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(rgb(81, 150, 206), white);
 }
 
 .pipe {
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    animation: pipe-animation 2s infinite linear;
-
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  animation: pipe-animation 2s infinite linear;
 }
 
 .mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
 }
 
 .jump {
-    animation: jump 500ms ease-out;
+  animation: jump 500ms ease-out;
 }
 
 .clouds {
-
-    width: 550px;
-    position: absolute;
-    animation: clouds-animation 20s linear infinite;
+  width: 550px;
+  position: absolute;
+  animation: clouds-animation 20s linear infinite;
 }
 
 @keyframes pipe-animation {
-    from {
-        right: -80px;
-    }
-
-    to {
-        right: 100%;
-    }
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
 }
 
-
 @keyframes jump {
-    0% {
-        bottom: 0;
-    }
-
-    40% {
-        bottom: 180px;
-    }
-
-    50% {
-        bottom: 180px;
-    }
-
-    60% {
-        bottom: 180px;
-    }
-
-    100% {
-        bottom: 0;
-    }
+  0% { bottom: 0; }
+  40%, 50%, 60% { bottom: 180px; }
+  100% { bottom: 0; }
 }
 
 @keyframes clouds-animation {
-    from {
-        right: -550px;
-    }
-
-    to {
-        right: 100%;
-    }
+  from { right: -550px; }
+  to { right: 100%; }
 }
 
+/* Score */
 .score-board {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px 12px;
-    border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+/* Lives as hearts below score */
+.lives-board {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.lives-board img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Tela Game Over */
+.game-over-screen {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.game-over-screen h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0000;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Botão reiniciar estilo moderno e colorido Mario */
+.game-over-screen button {
+  padding: 16px 36px;
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #ff3d3d, #ff7f50); /* Vermelho vibrante com degradê laranja */
+  color: #fffacd; /* Amarelo claro */
+  border: 3px solid #ffd700; /* Borda dourada */
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow:
+    0 4px 0 #b34700, /* sombra inferior escura */
+    0 8px 15px rgba(255, 127, 80, 0.7); /* sombra difusa laranja */
+  text-shadow:
+    1px 1px 1px #990000, /* sombra de texto vermelha escura */
+    2px 2px 5px #ffa500; /* brilho laranja */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-over-screen button:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 0 #b34700,
+    0 12px 20px rgba(255, 127, 80, 0.9);
 }

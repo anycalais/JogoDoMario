@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="js/script.js" defer></script>
-    <title>Mario Jump</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mario Jump</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
-
 <body>
-    <div class="game-board">
-        <div class="score-board">
-            <span>Score: </span><span id="score">0</span>
-        </div>
-        <img src="img/clouds.png" class="clouds" alt="Clouds">
-        <img src="img/mario.gif" class="mario" alt="Mario">
-        <img src="img/pipe.png" class="pipe" alt="Pipe">
+  <div class="game-board">
+    <div class="score-board">
+      <span>Score: </span><span id="score">0</span><br />
+      <span>Recorde: </span><span id="highScore">0</span>
     </div>
-</body>
 
+    <div class="lives-board" id="livesBoard">
+      <!-- Corações gerados pelo JS -->
+    </div>
+
+    <img src="img/clouds.png" class="clouds" alt="Clouds" />
+    <img src="img/mario.gif" class="mario" alt="Mario" />
+    <img src="img/pipe.png" class="pipe" alt="Pipe" />
+
+    <div id="gameOverScreen" class="game-over-screen">
+      <h2>Game Over</h2>
+      <button id="restartBtn">Reiniciar</button>
+    </div>
+  </div>
+
+  <!-- Sons -->
+  <audio id="jumpSound" src="audio/jump.wav" preload="auto"></audio>
+  <audio id="hitSound" src="audio/hit.wav" preload="auto"></audio>
+  <audio id="gameOverSound" src="audio/gameover.wav" preload="auto"></audio>
+  <audio id="restartSound" src="audio/restart.wav" preload="auto"></audio>
+</body>
 </html>
