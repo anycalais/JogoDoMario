@@ -8,6 +8,8 @@
 
 body {
   font-family: 'Press Start 2P', cursive;
+  background-color: #3e2723; /* marrom escuro */
+
 }
 
 .game-board {
@@ -96,13 +98,10 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.85);
   padding: 30px;
   border-radius: 12px;
-  color: white;
   text-align: center;
   z-index: 10;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
 .game-over-screen h2 {
@@ -118,25 +117,25 @@ body {
   padding: 16px 36px;
   font-size: 16px;
   font-family: 'Press Start 2P', cursive;
-  background: linear-gradient(135deg, #ff3d3d, #ff7f50); /* Vermelho vibrante com degradê laranja */
-  color: #fffacd; /* Amarelo claro */
-  border: 3px solid #ffd700; /* Borda dourada */
+  background: linear-gradient(135deg, #b90000, #b80000); /* Vermelho vibrante com degradê laranja */
+  color: #fffdeb; /* Amarelo claro */
+  border: 3px solid #fad400; /* Borda dourada */
   border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow:
-    0 4px 0 #b34700, /* sombra inferior escura */
-    0 8px 15px rgba(255, 127, 80, 0.7); /* sombra difusa laranja */
+    0 4px 0 #b30000, /* sombra inferior escura */
+    0 8px 15px rgba(255, 0, 0, 0.7); /* sombra difusa laranja */
   text-shadow:
-    1px 1px 1px #990000, /* sombra de texto vermelha escura */
-    2px 2px 5px #ffa500; /* brilho laranja */
+    1px 1px 1px #d30000, /* sombra de texto vermelha escura */
+    2px 2px 5px #ff0000; /* brilho laranja */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .game-over-screen button:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 8px 0 #b34700,
-    0 12px 20px rgba(255, 127, 80, 0.9);
+    0 8px 0 #b30000,
+    0 12px 20px rgba(255, 80, 80, 0.9);
 }
