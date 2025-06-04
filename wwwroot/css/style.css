@@ -105,7 +105,7 @@ body {
 }
 
 .game-over-screen h2 {
-  font-size: 22px;
+  font-size: 52px;
   margin-bottom: 30px;
   text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff0000;
   color: white;
@@ -118,17 +118,17 @@ body {
   font-size: 16px;
   font-family: 'Press Start 2P', cursive;
   background: linear-gradient(135deg, #b90000, #b80000); /* Vermelho vibrante com degradê laranja */
-  color: #fffdeb; /* Amarelo claro */
-  border: 3px solid #fad400; /* Borda dourada */
+  color: #fff598; /* Amarelo claro */
+  border: 3px solid #fff06d; /* Borda dourada */
   border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow:
-    0 4px 0 #b30000, /* sombra inferior escura */
-    0 8px 15px rgba(255, 0, 0, 0.7); /* sombra difusa laranja */
+    0 4px 0 #df4545, /* sombra inferior escura */
+    0 8px 15px rgba(255, 96, 96, 0.7); /* sombra difusa laranja */
   text-shadow:
-    1px 1px 1px #d30000, /* sombra de texto vermelha escura */
+    1px 1px 1px #e40000, /* sombra de texto vermelha escura */
     2px 2px 5px #ff0000; /* brilho laranja */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -136,6 +136,6 @@ body {
 .game-over-screen button:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 8px 0 #b30000,
-    0 12px 20px rgba(255, 80, 80, 0.9);
+    0 8px 0 #ce4f4f,
+    0 12px 20px rgba(255, 190, 190, 0.9);
 }
